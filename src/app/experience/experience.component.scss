@@ -1,0 +1,65 @@
+@use '../../variables' as vars;
+
+.experience-section {
+  max-width: 1100px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+
+  h2 {
+    text-align: center;
+    color: vars.$primary-color;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+
+  .experience-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+
+    @media (min-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+      /* 2 columns on tablet/desktop, adjust as needed */
+    }
+
+    .experience-card {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 1.5rem;
+      transition: box-shadow 0.3s ease;
+
+      &:hover {
+        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      }
+
+      h3 {
+        margin-top: 0;
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .period-location {
+        margin: 0.5rem 0;
+        color: vars.$muted-color;
+        font-size: 0.95rem;
+      }
+
+      ul {
+        margin: 1rem 0;
+        padding-left: 1.2rem;
+        list-style: disc;
+        li {
+          margin: 0.5rem 0;
+        }
+      }
+
+      .skills {
+        font-size: 0.9rem;
+        strong {
+          color: vars.$text-color;
+        }
+      }
+    }
+  }
+}

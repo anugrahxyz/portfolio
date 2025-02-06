@@ -1,0 +1,18 @@
+<div class="experience-section" id="experience">
+  <h2>Experience</h2>
+
+  <div class="experience-cards">
+    <div *ngFor="let exp of experiences" class="experience-card">
+      <h3>{{ exp.position }} &#64; {{ exp.companyName }}</h3>
+      <p class="period-location">
+        <strong>{{ exp.period }}</strong> | {{ exp.location }}
+      </p>
+      <ul>
+        <li *ngFor="let d of exp.description">{{ d }}</li>
+      </ul>
+      <p class="skills">
+        <strong>Skills:</strong> {{ exp.skills.join(', ') }}
+      </p>
+    </div>
+  </div>
+</div>

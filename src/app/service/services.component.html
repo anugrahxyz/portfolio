@@ -1,0 +1,12 @@
+<div class="services-section" id="services">
+  <h2>Services</h2>
+  <p>Looking to build a custom application? I offer the following services:</p>
+
+  <div class="services-wrapper">
+    <div class="service-card" *ngFor="let service of services">
+      <!-- You can use an <mat-icon> if you’re using Angular Material, or <img> for custom icons -->
+      <h3>{{ service.title }}</h3>
+      <p>{{ service.description }}</p>
+    </div>
+  </div>
+</div>

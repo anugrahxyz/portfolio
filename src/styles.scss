@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fafafa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+
+$app-max-width: 960px;
+
+.app-container {
+  margin: 0 auto;
+  max-width: $app-max-width;
+  padding: 1rem;
+}
+
+// e.g. in styles.scss or a global stylesheet
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
