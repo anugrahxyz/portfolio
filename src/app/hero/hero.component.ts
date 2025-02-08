@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
   standalone: true
 })
 export class HeroComponent {
-  name = 'Anugrah Zeputra';
+  name = 'Anugrah Team Portfolio';
+  tagline = 'We manage and deliver successful tech projects.'
 
 }

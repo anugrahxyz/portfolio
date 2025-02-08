@@ -8,7 +8,7 @@ import {NgOptimizedImage} from '@angular/common';
   styleUrl: './about.component.scss'
 })
 export class AboutComponent {
-  name = 'Anugrah Zeputra';
+  name = 'Anugrah Ze putra';
   title = 'Software Engineer';
   location = 'Jakarta Raya, Indonesia';
   description = `Graduated from Brawijaya University in Computer Engineering (2022).\nDuring college, realized gap between industry & academia, leading to skill up in Enigma Camp & eventually Askrindo.`;
